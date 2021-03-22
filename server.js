@@ -42,9 +42,6 @@ APP.disable("x-powered-by");
 // cookies
 APP.use(COOKIEPARSER());
 
-// body parser
-APP.use(bodyParser.json());
-
 // parsing json
 APP.use(EXPRESS.json());
 
