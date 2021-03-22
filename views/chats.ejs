@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chats.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="loading">
+        <div id="loader">
+            <p>Connecting . . .</p>
+        </div>
+    </div>
+    <header>
+            <button id="friends" title="Friends"><img src="friends.svg" alt="friends" ></button>
+            <ul id="friendsList"></ul>
+    </header>
+    <section>
+        <div id="menubar">
+            <div id="frequent">
+                <div id="chathead">
+                    <p><span id="receiver"></span></p>
+                </div>
+            </div>
+            <div id="menu-options">
+                <div id="menu-search">
+                    <input type="text" placeholder="search user" id="searchbar">
+                    <div id="searchresult"></div>
+                </div>
+                <div id="menu-chatRequests">
+                    <button id="chatRequests"><img src="requestIcon.svg" alt="" title="Notification"></button>
+                    <div id="chatRequestsresult">
+                        <div id="others">
+                            <p>
+                                <img src="defaultprofile.svg" alt="">
+                                <a id="chatrequests-username">username</a>
+                                <img src="accept.svg" alt="" id="chatrequests-accept">
+                                <img src="reject.svg" alt="" id="chatrequests-reject">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-account">
+                    <li id="profile">
+                        <button id="profilepic"><img src="defaultprofile.svg" alt="Account" title="Your Account"></button>
+                        <div id="online" title="Online"></div>
+                    </li>
+                    <div id="accountmenus">
+                        <a id="accountname"><%=username%></a>
+                        <a id="msgNotiPreference" >
+                            <button id="msgNotiPreferenceBtn" value=""></button>
+                        </a>
+                        <a id="logout" href="/chats/logout" title="Please turn Notification off before logging out if you do not want this device to receive notification after you log out.">
+                            <img src="logout.svg" alt="logout" >
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="main-container">
+            <div id="no-main-overlay">
+                <div id="no-conversation-selected-icon"><img src="no-chats.svg" alt=""></div>
+                <p id="no-conversation-selected-error">Select a conversation to display here
+                    <br>or start a new one.</p>
+            </div>
+            <main>
+                <div id="messages"></div>
+                <div id="send-msg-container">
+                    <input id="msgBox" type="text" placeholder="Type your message here">
+                    <button id="submit"><img src="send1.svg" alt=""></button>
+                </div>
+            </main>
+        </div>
+    </section>
+<script src="chats1.js" defer></script>
+<script src="chats.js" defer></script> 
+<script src="pushnotification.js" defer></script>  
+<!-- Default Statcounter code for My YourChats Project
+Website https://www.yourchats.herokuapp.com -->
+<script type="text/javascript">
+var sc_project=12489520; 
+var sc_invisible=1; 
+var sc_security="16a24785"; 
+var sc_https=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12489520/0/16a24785/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>

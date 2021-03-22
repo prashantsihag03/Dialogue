@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+</head>
+<body>
+    <header id="logo"><img src="Logo.svg" alt="YourChats Logo"></header>
+    <main>
+        <section id="signup-container">
+            <form id="signup" action="/signup" method="POST">
+                <small></small>
+                <input class="form-instance" type="text" placeholder="Create a username" name="username" required>
+                <small></small>
+                <input class="form-instance" type="password" placeholder="Create a password" name="password" required>
+                <small></small>
+                <input class="form-instance" type="email" placeholder="Email address" name="email" required>
+                <small></small>
+                <div class="form-instance" title="if you prefer not to mention, some gender based features might not work">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+                <input id="signupsubmit" type="submit" value="Sign Up">
+            </form>
+        </section>
+        <section id="login-container">
+            <form id="login" action="/login" method="POST">
+                <small></small>
+                <input class="form-instance" type="text" placeholder="Enter your username" name="username" required>
+                <small></small>
+                <input class="form-instance" type="password" placeholder="Enter your password" name="password" required>
+                <input id="loginsubmit" type="submit" value="Log In">
+            </form>
+        </section>
+        <button id="toggleForm">Signup</button>
+    </main>
+
+<script defer src="register.js"></script>
+<!-- Default Statcounter code for My YourChats Project
+Website https://www.yourchats.herokuapp.com -->
+<script type="text/javascript">
+var sc_project=12489520; 
+var sc_invisible=1; 
+var sc_security="16a24785"; 
+var sc_https=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12489520/0/16a24785/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</html>
