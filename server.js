@@ -35,9 +35,9 @@ APP.set('view engine', 'ejs');
 APP.disable("x-powered-by");
 
 //securing http request 
-APP.use(HELMET({
-    contentSecurityPolicy: false,
-}));
+// APP.use(HELMET({
+//     contentSecurityPolicy: false,
+// }));
 
 // cookies
 APP.use(COOKIEPARSER());
