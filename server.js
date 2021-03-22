@@ -69,7 +69,6 @@ SERVER.listen(PORT, (error) => {
 APP.get('/', sessionAuthentication, (request, response) => {
     if (response.locals.sessionAuthenticated) {
         // valid session exists at client
-        console.log("IP address for client connected is: "+ request.ip);
         response.redirect('/chats');
     } else {
         response.sendFile('register.html', { root: path.join(__dirname, '/public') });

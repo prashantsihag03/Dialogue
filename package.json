@@ -1,8 +1,8 @@
 {
-  "name": "wstest",
+  "name": "yourchats",
   "version": "1.0.0",
   "engines": {
-    "node": "12.19.0"
+    "node": "v14.15.4"
   },
   "description": "YourChats is a Chat Website providing an ability to chat with your friends without providing any mobile number. Email address is required for sake of identifying and confirming the uniqueness of the user.",
   "main": "server.js",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Prashant Sihag",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.814.0",
