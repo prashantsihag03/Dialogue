@@ -167,7 +167,7 @@ APP.post('/login', (request, response) => {
             response.end();
         };
     })
-    .catch(error => response.send("Error Occurred. Please try again later."));
+    .catch(error => response.send(error));
 });
 
 APP.get('/chats', sessionAuthentication, (request, response) => {
