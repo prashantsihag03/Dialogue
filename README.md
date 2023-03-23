@@ -1,6 +1,6 @@
-# yourchats
+# Dialogue
 
-Your Chats is a Chat Application built with Node.js and DynamoDB.
+Dialogue is a Chat Application built with Node.js and DynamoDB.
 Visit this link: https://yourchats.herokuapp.com
 
 ## Environment Variables
